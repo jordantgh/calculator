@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 40%;
+}
+
+#screen {
+    background-color: rgb(202, 247, 232);
+    border-radius: 10px;
+    height: 40%;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 95%;
+    height: 60%;
+}
+
+#numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+}
+
+#operators {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+#operators > button {
+    width: 65px;
+}
