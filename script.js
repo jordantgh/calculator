@@ -1,3 +1,18 @@
+let screen = document.querySelector("#screen");
+let buttons = document.getElementsByTagName("button");
+
+for (b of buttons) {
+  if (b.innerHTML !== "=") {
+    b.addEventListener('click', event => {
+      screen.innerHTML += event.target.innerHTML;
+    })  
+  }
+}
+
+let equals = document.querySelector("#=");
+
+equals.addEventListener('click', operate(screen.innerHTML));
+
 const add = function(a, b) {
     return a + b;
   };
@@ -21,7 +36,3 @@ const add = function(a, b) {
       },
     1)
   };
-
-  const operate = function(a, b) {
-    
-  }
